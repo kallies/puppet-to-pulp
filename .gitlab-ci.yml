@@ -1,0 +1,6 @@
+image: ruby:2.1-alpine
+
+puppet-to-pulp:
+  script:
+  - apk update
+  - apk add bash
