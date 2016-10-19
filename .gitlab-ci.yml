@@ -2,10 +2,10 @@ image: centos:7
 
 puppet-to-pulp:
   script:
-  - # do magic which should be moved to Dockerfile
-  - # if there is a Docker registry...
+  # do magic which should be moved to Dockerfile
+  # if there is a Docker registry...
   - mv rhel-pulp.repo /etc/yum.repos.d/
   - yum -y install epel-release >/dev/null
   - yum -y install gem rubygem-bundler puppet pulp-puppet-tools >/dev/null
-  - # end magic
+  # end magic
   - bundle install
