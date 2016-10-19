@@ -12,4 +12,4 @@ puppet-to-pulp:
   - ./run.sh
   artifacts:
     paths:
-      - artifacts/
+      - /artifacts/
