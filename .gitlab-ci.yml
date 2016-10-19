@@ -1,6 +1,6 @@
 image: centos:7
 
-puppet-to-pulp:
+puppet2pulp:
   script:
   # do magic which should be moved to Dockerfile
   # if there is a Docker registry...
@@ -9,7 +9,10 @@ puppet-to-pulp:
   - yum -y install gem rubygem-bundler puppet pulp-puppet-tools >/dev/null
   # end magic
   - bundle install
+  - mkdir artifacts
   - ./run.sh
   artifacts:
     paths:
-      - /artifacts/
+      - artifacts
+  only:
+  - master
