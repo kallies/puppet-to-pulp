@@ -4,5 +4,5 @@ puppet-to-pulp:
   script:
   - yum -y install gem rubygem-bundler
   - mv rhel-pulp.repo /etc/yum.repos.d/
-  - yum -y install pulp-puppet-tools
   - bundle install
+  - yum -y install pulp-puppet-tools
