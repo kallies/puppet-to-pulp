@@ -4,6 +4,8 @@ puppet2pulp:
   script:
   # do magic which should be moved to Dockerfile
   # if there is a Docker registry...
+  # if you want this prerequisites installed, you could use
+  # kallies/pulp-puppet-tools from dockerhub
   - mv rhel-pulp.repo /etc/yum.repos.d/
   - yum -y install epel-release >/dev/null
   - yum -y install gem rubygem-bundler puppet pulp-puppet-tools >/dev/null
