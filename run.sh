@@ -1,10 +1,9 @@
 #!/bin/sh
 
-#codedir="/puppet-code"
-moduledir="${codedir}/modules"
-pubdir="/var/www/html/pub/puppet-modules"
+moduledir=$(mktemp -d --suffix=_modules)
+#pubdir="/var/www/html/pub/puppet-modules"
+pubdir=$(mktemp -d --suffix=_pubdir)
 
-#mkdir ${codedir}
-#cd ${codedir}
 librarian-puppet install --path ${moduledir}  --clean --destructive --verbose
 pulp-puppet-module-builder ${moduledir} --output-dir=${pubdir}
+ls -la ${pubdir}

@@ -1,6 +1,3 @@
-#!/usr/bin/env ruby
-#^syntax detection
-
 forge "https://forge.puppet.com"
 
 # use dependencies defined in metadata.json
@@ -27,4 +24,3 @@ mod 'puppetlabs-ntp'
 mod 'puppetlabs-motd'
 mod 'saz-rsyslog'
 mod 'saz-sudo'
-mod 'ag-blah', :git => 'https://gitlab.puzzle.ch/ag/blah.git'
