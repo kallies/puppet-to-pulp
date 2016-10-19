@@ -9,3 +9,4 @@ puppet-to-pulp:
   - yum -y install gem rubygem-bundler puppet pulp-puppet-tools >/dev/null
   # end magic
   - bundle install
+  - ./run.sh
