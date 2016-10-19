@@ -10,3 +10,6 @@ puppet-to-pulp:
   # end magic
   - bundle install
   - ./run.sh
+  artifacts:
+    paths:
+      - artifacts/
