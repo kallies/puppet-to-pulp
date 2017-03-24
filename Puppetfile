@@ -20,8 +20,4 @@ metadata
 
 # A module from Github pre-packaged tarball
 # mod 'puppetlabs-apache', '0.6.0', :github_tarball => 'puppetlabs/puppetlabs-apache'
-mod 'puppetlabs-ntp'
 mod 'puppetlabs-motd'
-mod 'saz-rsyslog'
-mod 'saz-sudo'
-mod 'puppetlabs-apache'
