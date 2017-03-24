@@ -9,4 +9,5 @@ Use this for a Docker based workflow with a Puppetfile, librarian-puppet for pul
 1. Add the puppet modules you need to the Puppetfile
 1. If you want to use a private Docker registry, use the Dockerfile for building your image
 1. If you're using Gitlab with a Gitlab CI runner, push this repository to Gitlab. Otherwise integrate your own CI service or run run.sh manually
+  * after the build ran through the pipeline you'll be able to fetch the packed modules and the PULP_MANIFEST file from the artifacts
 

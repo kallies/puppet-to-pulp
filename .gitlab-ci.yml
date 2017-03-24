@@ -7,6 +7,6 @@ puppet2pulp:
   - ./run.sh
   artifacts:
     paths:
-      - artifacts
+      - modules
   only:
   - master
